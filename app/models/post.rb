@@ -3,5 +3,5 @@ class Post < ActiveRecord::Base
   validates :content, length: { minimum: 250 }
   validates :summary, length: { maximum: 250 }
   validates :category, inlcusion: { in: %w(Fiction Non-Fiction),
-    message: "%{value} is not a valid size" }
+    message: "%{value} is not a valid category" }
 end
